@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!--Lincando css-->
+    <title>Semântica</title>
+</head>
+<body>
+    <header> <!--Cabeçalho-->
+        <nav> <!--Conteudo de Navegação-->
+            <a href="/"> <!--lincando-->
+                <img src="" alt=""> <!--Logo com link-->
+            </a>
+
+            <ul> <!--Lista de navegação-->
+                <li><a href="">Home</a></li> <!--Exemplo-->
+                <li><a href="">Agendamento</a></li>
+                <li><a href="">Sobre</a></li>
+                <li></li>
+            </ul>
+        </nav> 
+    </header>
+    <main>  <!--Conteudo Principal-->
+       
+        <section> <!--Seções-->
+            <figure> <!--Semântica para adicionar imagens-->
+                <img src="" alt="">
+                <figcaption>Imagem</figcaption> <!--Legenda para imagem-->
+            </figure>
+        </section>
+
+        <section>
+            <div> <!--Bloco de conteudo exemplo-->
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate nihil nobis soluta necessitatibus commodi eveniet excepturi mollitia sed provident enim. Eius ullam unde eveniet praesentium iure deserunt magnam quia adipisci?</p> <!--Exemplo de conteudo no bloco-->
+            </div>
+            <div>
+
+            </div>
+        </section>
+
+        <section> <!--Seções-->
+            <article> <!--Repetivel (novo escopo) exemplo de criação-->
+                <header>
+                    <figure>
+                        <img src="" alt=""> 
+                    </figure>
+                </header>
+
+                <main>
+                    <h1></h1> <!--Pode ser um titluto exemplo-->
+                </main>
+
+                <footer></footer> <!--Autor, uma data exemplo-->
+            </article> 
+        </section>
+        
+        <section id="">
+            <h2></h2> <!--Subtitulo da tabela-->
+            <table class=""> <!--Tabela-->
+                <thead> <!--Cabeçalho da tabela-->
+                    <tr> <!--Linha da tabela-->
+                        <th></th> <!--Titulo das colunas do cabeçalho-->
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody> <!--Corpo da tabela-->
+                    <tr> <!--Linha da tabela-->
+                        <td></td> <!--Células da tabela informação do 1-->
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td></td> <!--Células da tabela informação do 2-->
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td></td> <!--Células da tabela informação do 3-->
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2></h2> <!--Subtitulo da tabela-->
+            <table> <!--Tabela-->
+                <thead> <!--Cabeçalho da tabela-->
+                    <tr> <!--Linha da tabela-->
+                        <th></th> <!--Titulo das colunas do cabeçalho-->
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody> <!--Corpo da tabela-->
+                    <tr> <!--Linha da tabela-->
+                        <td></td> <!--Células da tabela informação do 1-->
+                        <td rowspan="2"></td> <!--Mesclando celulas (Apagar a linha de baixo o que deseja mesclar)-->
+                        <td colspan="2"></td> <!--Mesclando coluna-->
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td></td> <!--Células da tabela informação do 2-->
+                                    <!--Linha apagada para mesclar-->
+                                    <!--Coluna apada para mesclar-->
+                        <td></td>
+                                    
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+        <form action="" method=""> <!--Formulário-->
+            <div>
+                <label for="texto">Nome</label>
+                <input type="text" id="texto" name="Nome"> <!--Tambem pode se usar a tag value ou plasceholder-->
+            </div>
+
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha">
+            </div>
+
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div>
+                <label for="data">Horário</label>
+                <input type="date" id="data" name="data">
+            </div>
+
+            <div>
+                <label for="numero">Input numero</label>
+                <input type="number" id="numero" name="numero">
+            </div>
+
+            <div>
+                <label for="arquivo">Inserir arquivo</label>
+                <input type="file" id="arquivo" name="arquivo">
+            </div>
+
+            <div>
+                <label for="site">Url</label>
+                <input type="url" id="site" name="site">
+            </div>
+            
+            <div>
+                <label for="caixa">Caixa colorida</label>
+                <input type="color" id="caixa" name="caixa">
+            </div>
+            
+            <div>
+                <label for="barra">Barrinha</label>
+                <input type="range" id="barra" name="barra" value="" max="" min=""> <!--No value definimos o valor da barra-->
+            </div>
+            
+            <div>
+                <label for="check">Caixa de seleção</label>
+                <input type="checkbox" id="check" name="check" checked> <!--Este atributo checked já inicia seleção da caixa-->
+            </div>
+            
+            <div>
+                <label for="selec">Apenas uma escolha</label>
+                <input type="radio" id="selec" name="selec"> <!--Permite selecionar apenas uma opção-->
+            </div>
+
+            <div>
+                <label for="limpa">Exclui</label>
+                <input type="reset" id="limpa" name="limpa" value="Limpar">
+            </div>
+            
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea> <!--Caixa de texto-->
+
+            <div>
+                <select name="select" id="select"> <!--Caixinha com opções selecionaveis-->
+                    <option value="" disabled selected>Selevione uma das opções</option>
+                    <option value="exemplo">Exemplo</option>
+                    <option value="exemplo1">Exemplo1</option>
+                    <option value="exemplo2">Exemplo2/option>
+                </select>
+            </div>
+            
+            <div>
+                <input type="submit" id="envia" name="envia" value="Enviar"> <!--Não nessário ter uma Label-->
+            </div>
+            
+           
+
+        </form>
+      
+    </main>
+
+    <aside> <!--Conteudo da barra lateral-->
+        <div>
+
+        </div>
+    </aside>
+
+    <footer></footer> <!--Rodapé-->
+
+    <script></script> <!--Lincancando javascript-->
+</body>
+</html>

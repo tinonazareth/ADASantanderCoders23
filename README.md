@@ -1,3 +1,3 @@
 # ADASantanderCoders23
 Santander Coders  edição2023
-## Estrutura par criação de uma página Web semântica
+## Estrutura para criação de uma página Web semântica

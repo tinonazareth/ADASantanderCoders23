@@ -1,3 +1,4 @@
+/* Css responsivo*/
 * {
     margin: 0;
     padding: 0;
@@ -51,3 +52,75 @@ main {
 .box:nth-child(3) {
     order: 1 ;
 }
+
+/*data-atritub*/
+[data-exemplo="products"] /*criando seus proprios atributos*/{
+
+}
+
+/*resolvendo problema de imagens em varios dispositivos diferentes*/
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    
+}
+
+/*animação de elementos*/
+[data-exemplo="products"] {
+    background: #ffffff51;
+    color: #fff;
+    border: none;
+    font-size: 2.6rem;
+    padding: 0.6rem 2.4em;
+    cursor: pointer;
+    margin: auto;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    transition: .2s ease-in-out;
+    opacity: 0; /*Elemento some da tela mas continua ocupando espaço e o evento de mouse continua*/
+    display: none; /*Elemento some da tela e não ocupa mais o espaço*/
+    visibility: hidden; /* Elemento some da tela não tem mais o evento do mouse e continua ocupando espaço*/
+}
+
+[data-exemplo="products"] :hover {
+    transform: scale(0.5);
+}
+
+/*Display grid*/
+.boxes1 {
+    height:  calc(100vh);
+    position: relative;
+    display: grid;
+    justify-content: flex-start;
+    gap: 2rem 5rem;
+    grid-template-columns: 3fr repeat(2, 1fr);
+    
+}
+
+main {
+    grid-area: title;
+}
+
+aside {
+    grid-area: login;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media screen and (min-width: 1024px) {
+    .page-content {
+        height: 100vh;
+        display: grid;
+        gap: 10rem 0 ;
+        grid-template-areas: 
+            ". . . ." /*linha de respiro*/
+            ". title login ."
+            ". tile login ."
+            ". .  login ."
+            ". . . ."
+            "footer footer footer footer"
+        ;
+    }
+}
+

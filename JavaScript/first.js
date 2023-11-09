@@ -105,3 +105,5 @@ console.clear();
 console.log('10' + 1);
 console.log('10' -1); // quando subtração funciona e pra outras opedrações tambem menos na soma
 
+// 
+

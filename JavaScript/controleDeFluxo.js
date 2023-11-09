@@ -88,5 +88,103 @@ for (let indice in arr) { // Percorrendo os indices
     console.log(indice, arr[indice])
 }
 
+// Métodos de arrays
 
+// fatiamento: slice
+let arr1 = [30, 12, 45, 34, 29]
+let arr2 = []
+
+console.log(arr1.slice(0, 2));
+console.clear();
+console.log('antes de adicionar', arr2)
+
+
+// Adicionando elementos: push | unshift
+arr1.push(10) // adiciona no final
+console.log('Adicionando')
+
+arr2.unshift(0) // adiciona no começo
+
+// Removendo elementos
+arr2.pop() //remove o ultimo elemento
+
+arr2.shift() // remove o primeiro elemento
+
+// Concatenando arrays: concat
+arr1.concat(arr2);
+console.log(arr1.concat(arr2)); // pode se inverter a ordem dos arrays
+
+// Buscar elementos: IndexOf | lastIndexOf
+let indiceDoElemento = arr1.indexOf(34); //retorna apenas o primerio encontrado
+console.log(indiceDoElemento);
+
+let arr3 = [1, 2, 3, 3, 5, 3]
+console.log(arr3.lastIndexOf(3))
+
+//Descobrindo a existência de um elemento: includes
+console.indexOf(arr1.includes(10)); // retorna true ou false
+
+// Invertendo arrays: reverse
+console.log('arr1 normal', arr1);
+
+const arr1Invertido = arr1.reverse();
+console.log('arri invertido', arr1Invertido);
+
+// Funções reaproveitar código
+function saudacao() { // definindo a função
+    console.log('Ola seja bem vindo(a) a aula de javaScript')
+}
+
+saudacao(); // chamando a função
+
+// Como enviar parâmetros para as funções
+
+function saudacao(nome, curso='JavaScript') { // definindo a função
+    console.log(`Olá, ${nome} seja bem vindo(a) a aula de ${cuso}`)
+}
+
+saudacao('Valtino');
+
+console.clear();
+
+// Retorno da função
+function soma(numero1, numero2) {
+    return numero1 + numero2
+}
+const resultado = soma(10, 20);
+console.log(resultado  / 2); //média
+
+function maiorDoQue50(numero) {
+    if (numero > 50) {
+        return true;
+    }
+    return false;
+}
+
+// Objetos
+// Como criar um objeto?
+let pessoa = { // chave-valor
+    nome: 'Valtino', 
+    idade:47,
+
+}
+
+console.log(pessoa.nome);
+console.log(pessoa['idade']); // forma alternativa para acessar o objeto
+
+// Como adicionar um par de chave-valor?
+pessoa.altura = 1.73;
+
+console.log(pessoa);
+
+// Remover elemento
+
+delete pessoa.altura
+
+console.log(pessoa)
+
+// Como percorrer o objeto?
+for (let chave in pessoa) {
+    console.log(chave)
+}
 

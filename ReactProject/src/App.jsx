@@ -25,3 +25,5 @@ function Botao(props) {
 
 
 export default App
+
+// Estados e eventos
